@@ -1,0 +1,29 @@
+vector<int>v;
+stack<int>s;
+for (int i=size-1;i>=0;i--)
+{
+    if(s.size(3)==0)
+    {
+        v.pushback(-1);
+    }
+    elseif(s.size(3)>0 && s.top()>arr[i])
+    {
+        v.pushback(s.top());
+    }
+    elseif(s.size()>0 && s.top()<=arr[i])
+    {
+        while(s.size()>0 && s.top()<=arr[i])
+        {
+            s.pop()
+        }
+    if(s.size()==0)
+    {
+        v.pushback(-1)
+    }
+    else
+    {
+        v.pushback(s.top())
+    }
+    }
+s.push(arr[i]);
+}

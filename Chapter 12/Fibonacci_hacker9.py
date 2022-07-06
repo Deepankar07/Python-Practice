@@ -1,0 +1,11 @@
+first=0
+second=1
+n=10
+sum=0
+i=1
+while i<=n:
+    print(sum,end=" ")
+    first=second
+    second=sum
+    sum=first+second
+    i+=1
